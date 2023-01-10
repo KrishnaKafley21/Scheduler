@@ -1,4 +1,4 @@
-function sortTable(n) {
+function sortTable(n) { 
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById("todoTable");
   switching = true;
@@ -6,7 +6,7 @@ function sortTable(n) {
   dir = "asc"; 
   /*Make a loop that will continue until
   no switching has been done:*/
-  while (switching) {
+  while (switching) { 
     //start by saying: no switching is done:
     switching = false;
     rows = table.rows;
