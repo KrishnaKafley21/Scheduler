@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scheduler</title>
+    <link rel="stylesheet" href="todo.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="clock.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class = "header" >
+        <img class="CompanyLogo" src="/logo.jpg" alt="Logo" width="100" height="100">
+
+        <div class = "header-text">
+        <h1>Scheduler</h1>
+        </div>
+
+        <div class = "time">
+            <span class="hms"></span>
+            <span class="ampm"></span>
+            <br>
+            <span class="date"></span>
+        </div>
+    </header>
+
+    <div id = "new-task">
+        <input id = "inputTime" type="time" placeholder="Time"/>
+        <input id = "inputCarrier" type="text" placeholder="Enter Carrier Name" />
+        <input id = "inputQty" type="number" placeholder="Enter Qantity"/>
+        <button id="new-task-submit">Add To List</button>
+        <span id = "val"></span>
+    </div>
+
+<br>
+
+    <table id="todoTable">
+      <tr>
+        <!-- <th> Time</th>
+        <th> Carrier</th>
+        <th> Quantity</th>
+        <th> Check Box</th>
+        <th> Delete</th> -->
+
+        <br>
+
+        <th id = "time"> Time </th>
+        <th id = "Carrier">Carrier</th> 
+        <!-- <th onclick = "sortTable(1)" id = "qty">Quantity </th>  -->
+        <th onclick = "sortTable(2)" id = "qty"> Quantity </th> 
+        <th id = "Cbox">Check Box</th>
+        <th id = "del">Delete</th> 
+
+      </tr>
+    </table>
+
+
+    </div>
+
+
+
+    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+
+    <script src="main.js"></script>
+    <script src="todo.js"></script>
+    <script src="clock.js"></script>
+    <script src="subtotal.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,201 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
+* {
+	margin: 20;
+	box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+
+}
+
+
+.header {
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  justify-content:space-between;
+  align-items:center;
+}
+
+
+
+ #spacer{
+  width: 150px;
+  
+}
+
+
+h1 {
+  font-size: 50pt;
+}
+
+
+body {
+  background: rgb(230, 230, 230);
+}
+.time { 
+  background: rgb(12, 12, 12);
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+  border: 7px solid rgb(255, 252, 252);
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  padding: 8px;
+  text-align: center;
+  align-items: left;
+  width: fit-content;
+  height:fit-content;
+}
+.hms {
+  font-size: 28pt;
+}
+.ampm {
+  font-size: 22pt;
+}
+.date {
+  font-size: 15pt;
+}
+
+
+
+
+/* CSS */
+#new-task-submit {
+  background: #1d1d20;
+  border-radius: 10rem;
+  box-shadow: #323233 0 -1px 20px 2px ;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 5px 15px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 100;
+}
+
+
+#new-task{
+	flex: 1 1 0%;
+	background-color: var(--darker);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--light);
+	font-size: 1.25rem;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+
+  background: #2d2d30;
+  box-shadow: #5b5b5f 0 10px 20px -5px;
+}
+
+
+
+#new-task::placeholder {
+	color: var(--grey);
+}
+
+
+#timeVaal {
+  color: red;
+}
+
+
+.strike {
+    text-decoration: line-through;
+    text-decoration-thickness: 100%;
+  }
+
+  
+  table {
+    border-spacing: 10;
+    width: 100%;
+    counter-reset: rowNumber;
+  }
+  
+  th {
+    cursor: pointer;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+    
+  }
+
+  #time, #Carrier, #qty, #Cbox, #del {
+     color: #f6efef;
+     
+
+    /* box-shadow: #5E5DF0 0 10px 50 5px;  */
+
+  background:#2d2d30;
+  box-shadow: #5b5b68 0 10px 20px -5px;
+
+    text-align: left;
+  }
+
+  #time{
+    border-radius:50px 0px 0px 0px;
+  }
+  #del {
+    border-radius:0px 50px 0px 0px;
+
+  }
+
+  #inputTime, #inputCarrier, #inputQty {
+    font-size: large;
+    margin-right: 1.4rem;
+    padding:1rem;
+    padding: 5px 15px;
+    align-content: center;
+    box-shadow: black 0 10px 20px -5px;
+    background: #d9dce0;
+    border-radius:50px 0px 50px 10px;
+
+
+
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2
+  }
+  
+  
+  table {
+    border-spacing: 0;
+    counter-reset: rowNumber-1;
+}
+
+table tr:not(:first-child) {
+    counter-increment: rowNumber;
+}
+
+table tr td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 1.5em;
+    
+}
+
+
+#val {
+  display: block;
+  margin-top: 0.5em;
+}
