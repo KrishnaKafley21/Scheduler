@@ -16,25 +16,7 @@
 //    }
    
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+
    
    
 //    var grid = document.getElementById("todoTable"), sumVal = 0;
