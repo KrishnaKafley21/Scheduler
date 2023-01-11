@@ -58,7 +58,6 @@ function todoMain(){
      updateSubTotal();
 
 
-
     let checkBoxElem = document.createElement("input");
     checkBoxElem.type = "checkbox";
     checkBoxElem.addEventListener("click",done, false);
@@ -66,13 +65,11 @@ function todoMain(){
     tdElem1.appendChild(checkBoxElem);
     trElem.appendChild(tdElem1);
 
-  
 
     // delete cell
     let spanElem = document.createElement("span");
     spanElem.innerText = "delete";
     spanElem.className = "material-icons";
-
 
 
     //spanElem.className = "material-icons";

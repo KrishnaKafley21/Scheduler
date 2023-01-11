@@ -12,6 +12,7 @@
 	margin: 20;
 	box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
+  /* background-image: url("background.jpg") ; */
 
 }
 
@@ -112,10 +113,6 @@ body {
 }
 
 
-#timeVaal {
-  color: red;
-}
-
 
 .strike {
     text-decoration: line-through;
@@ -143,7 +140,7 @@ body {
      color: #f6efef;
      
 
-    /* box-shadow: #5E5DF0 0 10px 50 5px;  */
+    box-shadow: #5E5DF0 0 10px 50 5px; 
 
   background:#2d2d30;
   box-shadow: #5b5b68 0 10px 20px -5px;
@@ -159,7 +156,7 @@ body {
 
   }
 
-  #inputTime, #inputCarrier, #inputQty {
+  #inputTime, #inputCarrier, #inputQty{
     font-size: large;
     margin-right: 1.4rem;
     padding:1rem;
@@ -169,6 +166,10 @@ body {
     background: #d9dce0;
     border-radius:50px 0px 50px 10px;
 
+  }
+
+  #val {
+    border-radius:50px 0px 50px 10px;
 
 
   }
